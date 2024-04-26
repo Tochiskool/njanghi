@@ -49,6 +49,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+.minH{
+  min-height: 1px;
+}
 /***************************
 Layout Styles
 ***************************/
@@ -93,6 +97,15 @@ Layout Styles
   .col-1-2{
     width: 50%;
   }
+  .col-1-4{
+    width:25%;
+  }
+  .col-3-4{
+    width: 75%;
+  }
+  .col-smart{
+    width: 17%;
+  }
 }
 @media (min-width: 48em) {
   .pull-right-sm {
@@ -107,9 +120,23 @@ Layout Styles
 }
 }
 /***************************
-****************************
 Module Styles
-****************************
 ***************************/
 
+/* Button Module  */
+.btn { 
+   padding: .5em 1em; 
+   text-decoration: none; 
+   border: 0.2rem gray solid; 
+   display: inline-block; /*helps anchors and other inline elements  */
+} 
 
+ /* Button Sub-Module  */
+
+.btn—content {
+
+ background: blue;
+
+ color: white;
+
+}

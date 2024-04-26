@@ -2,11 +2,15 @@ import React from 'react'
 
 const SlideShow = () => {
   return (
-         <section className="background-secondary">
-                      <div className="container">
-                      Media Objects
-                      </div>
-                  </section>
+      <section className='container'>
+          <div className="row">
+                        <div className="remove-gutter-xs">
+                            <div>
+                               Media Image
+                            </div>
+                        </div>
+                    </div>
+      </section>
   )
 }
 
