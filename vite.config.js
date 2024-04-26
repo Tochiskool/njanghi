@@ -6,3 +6,5 @@ export default defineConfig({
   plugins: [react()],
   base:"/njanghi/"
 })
+
+// https://vitejs.dev/guide/static-deploy

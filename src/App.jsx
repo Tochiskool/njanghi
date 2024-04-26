@@ -1,18 +1,27 @@
 
+import Features from "./routes/Features"
+import Footer from "./routes/Footer"
+import Hero from "./routes/Hero"
+import Navbar from "./routes/Navbar"
+import SlideShow from "./routes/SlideShow"
+import Testimonials from "./routes/Testimonials"
+import Welcometoday from "./routes/Welcometoday"
+
 const App = () => {
   
   return ( 
     <>
-         <header className="background-primary">Header Content</header>
-              <main>
-                   <section className="background-secondary">Hero Primary Content</section>
-                        <section>Image and Text Content</section>
-                              <section>Featured Content</section>
-                              <section className="background-primary">Testimonial Content</section>
-                         <section className="background-secondary">Media Objects</section>
-                   <section className="background-tertiary">More Content</section>
-              </main>
-              <footer className="background-primary">Footer Content</footer>
+    <Navbar/>
+    <Hero/>
+    <main>
+            <Welcometoday/>
+            <Features/>
+            <Testimonials/>
+            <SlideShow/>
+             
+    
+            </main>
+            <Footer/>
     </>
   )
 }
