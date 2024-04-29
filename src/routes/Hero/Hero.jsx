@@ -1,5 +1,5 @@
 import React from 'react'
-import image from "./Images/teddy.jpg"
+import image from "./Images/logo.png"
 import imageHero from "./Images/hero.jpeg"
 import Navbar from '../Navbar'
 

@@ -29,6 +29,9 @@ Theme Styles
   .background-tertiary {
     background: #8DC63F; /*Green*/
   }
+  .background-quinary{
+    background:#e7e1d7;
+  }
 /***************************
 Base Styles
 ***************************/
@@ -50,8 +53,12 @@ a:hover {
   text-decoration: underline;
 }
 
-.minH{
-  min-height: 1px;
+
+
+.center{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 /***************************
 Layout Styles
@@ -106,6 +113,12 @@ Layout Styles
   .col-smart{
     width: 17%;
   }
+  /* Max with image */
+  .img{
+    width: 100%;   
+    height: auto;
+    object-fit: cover;
+  }
 }
 @media (min-width: 48em) {
   .pull-right-sm {
@@ -117,6 +130,11 @@ Layout Styles
   .remove-gutter-xs {
     padding-left: 0px;
     padding-right: 0px;
+}
+.img{
+  width: 100%;   
+  height: auto;
+  object-fit: cover;
 }
 }
 /***************************
@@ -243,3 +261,21 @@ Module Styles
   min-width: 100%;
 }
 
+/*Media Object Module*/
+.media {
+
+}
+
+.media, .media-body {
+  overflow:hidden;
+}
+
+.media-item {
+  float:left;
+  margin-right: 10px;
+}
+
+.media-item i {
+  color: #594a42;
+  font-size: 5em;
+}

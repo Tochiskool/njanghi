@@ -2,7 +2,7 @@ import React from 'react'
 import Welcometoday from './Welcometoday'
 import Features from './Features'
 import Testimonials from './Testimonials'
-import SlideShow from './SlideShow'
+import SlideShow from './Slider/SlideShow'
 
 const Wrapper = () => {
   return (
