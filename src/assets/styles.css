@@ -120,30 +120,43 @@ Layout Styles
     object-fit: cover;
   }
 }
-@media (min-width: 48em) {
-  .pull-right-sm {
-    float:right;
+  @media (min-width: 48em) {
+    .pull-right-sm {
+      float:right;
+  }
+   .btn-toggle-menu{
+    display: none;
+  } 
+   .nav-primary{
+    margin: top 28px;
+    display: block;
+   }
 }
-}
+
 /* Extra small devices */
 @media only screen and (max-width : 47.9375em) {
   .remove-gutter-xs {
     padding-left: 0px;
     padding-right: 0px;
 }
-.img{
-  width: 100%;   
-  height: auto;
-  object-fit: cover;
+  .img{
+    width: 100%;   
+    height: auto;
+    object-fit: cover;
+  }
+  .btn{
+    display: inline-block;
+  }
 }
-}
+
+
 /***************************
 Module Styles
 ***************************/
 
 /* Button Module  */
 .btn { 
-  display: inline-block;
+  /* display: inline-block; */
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
@@ -162,7 +175,7 @@ Module Styles
  .btn-primary {
   background: #efcd78;
   border-color: #efcd78;
-  color: white;
+  color: #15073c;
  }
 
  .btn-primary:hover {
@@ -170,46 +183,6 @@ Module Styles
   border-color: white;
   text-decoration: none;
  }
-
- /*Header Modules*/
-.header-primary {
-  background: #9c3b0e;
-  text-align: center;
-  padding-top: 18px;
-  padding-bottom: 18px;
-}
-
-
-/*Logo Modules*/
-.logo {
-  overflow: hidden;
-  display: inline-block;
-}
-
-.logo-primary {
-  width: 64px;
-  height: 64px;
-}
-
-
-.logo-primary img {
-  height: 100%;
-}
-
-/*Navigation Modules*/
-.nav > ul {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-}
-
-.nav-primary {
-  margin-top: 35px;
-}
-
-.btn-nav {
-  color: white;
-}
 
 /*Hero Modules*/
 .hero {

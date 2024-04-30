@@ -2,7 +2,7 @@
 import Features from "./routes/Features"
 import Footer from "./routes/Footer"
 import Hero from "./routes/Hero/Hero"
-import Navbar from "./routes/Navbar"
+import Navbar from "./routes/Navbar/Navbar"
 import Wrapper from "./routes/Wrapper"
 
 

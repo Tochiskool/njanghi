@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 const Testimonials = () => {
   return (
   <>
-     <section className='background-quinary'>
+     
         <div className="container">
             <div className="row">
             <div className="media col-1-2">
@@ -16,7 +16,7 @@ const Testimonials = () => {
                 <div className="media-body">
                     <h4 className="media-heading">Vite</h4>
                     <p>Get ready for a development environment that can finally catch up with you.</p>
-                    <button className="btn btn-primary"><Link className="btn btn-primary" to="https://vitejs.dev/">Vite</Link></button>
+                    <button className="btn"><Link to="https://vitejs.dev/">Learn</Link></button>
                 </div>
               </div>
               <div className="media col-1-2">
@@ -25,13 +25,12 @@ const Testimonials = () => {
              </div>
                 <div className="media-body">
                     <h4 className="media-heading">Github</h4>
-                    <p>Get a detail on everything regarding this portfolio.</p>
-                    <button className="btn btn-primary"><Link className="btn btn-primary" to="https://github.com/Tochiskool/njanghi">Github</Link></button>
+                    <p>Please feel to examine my code and send comments. If you think I deserve to</p>
+                    <button className="btn"><Link to="https://github.com/Tochiskool/njanghi">Learn</Link></button>
                 </div>
               </div>
             </div>
         </div>
-  </section>
   </>
   )
 }

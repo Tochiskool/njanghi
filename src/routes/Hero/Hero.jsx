@@ -1,17 +1,32 @@
-import React from 'react'
-import image from "./Images/logo.png"
+import React,{ useState } from "react"
+import image from "./Images/acn.jpeg"
 import imageHero from "./Images/hero.jpeg"
-import Navbar from '../Navbar'
+import Navbar from '../Navbar/Navbar'
+import "./Css/hero.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 
 const Hero = () => {
+  const [display, setDisplay] = useState("none");
+
+  const handleDisplay = ()=>{
+    if(display === "none"){
+      setDisplay("block")
+    }else{
+      setDisplay("none")
+    }
+  }
   return (
     <>
-             <header className="background-primary header-primary">
-                <div className="container header-primary">
+             <header className="header-primary">
+                <div className="flexing">
                 <a className="logo logo-primary">
                 <img src={image} alt="Working desk"/>
-                </a>
+                </a>        
+                <div className='btn btn-primary btn-toggle-menu'>
+                 <FontAwesomeIcon icon={faBars} />
+                </div>
                 <Navbar/>
                 </div>
             </header>

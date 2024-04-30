@@ -1,7 +1,7 @@
 import React from 'react'
 import Welcometoday from './Welcometoday'
 import Features from './Features'
-import Testimonials from './Testimonials'
+import Testimonials from './Testimonial/Testimonials'
 import SlideShow from './Slider/SlideShow'
 
 const Wrapper = () => {
