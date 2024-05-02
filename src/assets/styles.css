@@ -175,7 +175,7 @@ Module Styles
  .btn-primary {
   background: #efcd78;
   border-color: #efcd78;
-  color: #15073c;
+  color: white;
  }
 
  .btn-primary:hover {

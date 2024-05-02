@@ -1,9 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./Css/navstyle.css"
-const Navbar = () => {
+const Navbar = ({style}) => {
+ 
   return (
-    <nav className='nav nav-primary'>
+    <nav className='nav nav-primary' style={style}>
         <ul>
         <Link className="btn btn-nav" to="/njanghi">Home</Link>
         <Link className="btn btn-nav" to="/about">ABout</Link>

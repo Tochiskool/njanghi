@@ -1,5 +1,5 @@
 import React from 'react'
-import Welcometoday from './Welcometoday'
+import Welcometoday from './Welcome/Welcometoday'
 import Features from './Features'
 import Testimonials from './Testimonial/Testimonials'
 import SlideShow from './Slider/SlideShow'
