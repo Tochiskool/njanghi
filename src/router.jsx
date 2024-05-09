@@ -1,10 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import About from "./routes/About";
-import Projects from "./routes/Projects";
+import Projects from "./routes/Project/Projects";
 import Contact from "./routes/Contact";
-import GithubShow from "./GithubShow/GithubShow"
-
+import GithubShow from "./GithubShow/GithubShow";
 
 export const router = createBrowserRouter([
   {
@@ -24,8 +23,7 @@ export const router = createBrowserRouter([
     element: <Contact />,
   },
   {
-    path:"/githubshow",
-    element: <GithubShow />
-  }
-
-])
+    path: "/githubshow",
+    element: <GithubShow />,
+  },
+]);

@@ -64,6 +64,7 @@ const Welcometoday = () => {
                   <li>Ajax</li>
                   <li>Jquery</li>
                   <li>Regx</li>
+                  <li>Heroku</li>
                   <li>Time and space complexity issues</li>
                 </ul>
               </details>
