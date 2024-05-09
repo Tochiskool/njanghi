@@ -1,0 +1,16 @@
+article blockquote {
+  background-color: #d5cdc9;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  box-shadow: 0.5rem 0.5rem 1rem #e6c6ad;
+  line-height: 1.5;
+}
+
+article blockquote h4,
+h5 {
+  text-align: center;
+}
+article blockquote ul {
+  text-align: center;
+  list-style: none;
+}

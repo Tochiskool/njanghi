@@ -1,0 +1,15 @@
+.wrapper {
+  min-height: 100%;
+  padding-bottom: 100px;
+  margin: 0 auto;
+}
+.wrapper h1, p {
+  text-align: center;
+}
+
+/* .wrapper div .row .card-container div div .card-img{
+  width: 100%;
+} */
+.wrapper .card-img{
+  width: 100%;
+}

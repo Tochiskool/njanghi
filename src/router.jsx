@@ -3,6 +3,7 @@ import App from "./App";
 import About from "./routes/About";
 import Projects from "./routes/Projects";
 import Contact from "./routes/Contact";
+import GithubShow from "./GithubShow/GithubShow"
 
 
 export const router = createBrowserRouter([
@@ -22,5 +23,9 @@ export const router = createBrowserRouter([
     path: "/contact",
     element: <Contact />,
   },
+  {
+    path:"/githubshow",
+    element: <GithubShow />
+  }
 
 ])
