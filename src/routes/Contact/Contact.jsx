@@ -11,7 +11,7 @@ const Contact = () => {
           <div className='formContainer'>
             <form action=''>
               <h1>CONTACT FORM</h1>
-              <fieldset>
+              <fieldset disabled='disabled'>
                 <legend>Send a message</legend>
                 <div>
                   <div className='field'>
@@ -60,6 +60,17 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
+                <button
+                  style={{
+                    display: "block",
+                    width: "20%",
+                    margin: "0 auto",
+                    marginTop: "0.5rem",
+                  }}
+                  class='button is-primary is-dark'
+                >
+                  Submit
+                </button>
               </fieldset>
             </form>
           </div>
