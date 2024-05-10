@@ -32,9 +32,9 @@ const Footer = () => {
       <section>
         <div className='container'>
           <div className='row'>
-            <div className='col-1-4 minH remove-gutter-xs'>
-              <span class='icon-text'>
-                <span class='icon'>
+            <div className='col-1-4 centerSmall'>
+              <span className='icon-text'>
+                <span className='icon'>
                   <Link to='https://twitter.com/Tochiskool'>
                     <FontAwesomeIcon icon={faTwitter} />
                   </Link>
@@ -42,9 +42,9 @@ const Footer = () => {
                 <span>Twitter</span>
               </span>
             </div>
-            <div className='col-1-4 remove-gutter-xs'>
-              <span class='icon-text'>
-                <span class='icon'>
+            <div className='col-1-4 centerSmall '>
+              <span className='icon-text'>
+                <span className='icon'>
                   <Link to='https://twitter.com/Tochiskool'>
                     <FontAwesomeIcon icon={faXTwitter} />
                   </Link>
@@ -52,9 +52,9 @@ const Footer = () => {
                 <span>..</span>
               </span>
             </div>
-            <div className='col-1-4 remove-gutter-xs'>
-              <span class='icon-text'>
-                <span class='icon'>
+            <div className='col-1-4 centerSmall '>
+              <span className='icon-text'>
+                <span className='icon'>
                   <Link to='https://www.linkedin.com/in/christian-n-awemu-6553491b9/'>
                     <FontAwesomeIcon icon={faLinkedin} />
                   </Link>
@@ -62,9 +62,9 @@ const Footer = () => {
                 <span>LinkedIn</span>
               </span>
             </div>
-            <div className='col-1-4 remove-gutter-xs'>
-              <span class='icon-text'>
-                <span class='icon'>
+            <div className='col-1-4 centerSmall'>
+              <span className='icon-text '>
+                <span className='icon'>
                   <Link to='https://github.com/Tochiskool'>
                     <FontAwesomeIcon icon={faGithub} />
                   </Link>

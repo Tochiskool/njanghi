@@ -47,30 +47,30 @@ const Welcometoday = () => {
                   to join a team
                 </strong>
               </em>
-              <details>
-                <summary>
-                  This is a MERN STACK WEBSITE.{" "}
-                  <em style={{ color: "grey", cursor: "pointer" }}>
-                    read more....
-                  </em>{" "}
-                </summary>
-                I have deep knowledge on Mongo, mongoose, Mysql, sequelize
-                <ul>
-                  <li>Operating system Mac</li>
-                  <li>Version control: Git/Github/Slack</li>
-                  <li>REACT</li>
-                  <li>Mongodb</li>
-                  <li>Sequelize and mysql</li>
-                  <li>API CALLS</li>
-                  <li>Object oriented Javascript</li>
-                  <li>Ajax</li>
-                  <li>Jquery</li>
-                  <li>Regx</li>
-                  <li>Heroku</li>
-                  <li>Time and space complexity issues</li>
-                </ul>
-              </details>
             </p>
+            <details>
+              <summary>
+                This is a MERN STACK WEBSITE.{" "}
+                <em style={{ color: "grey", cursor: "pointer" }}>
+                  read more....
+                </em>{" "}
+              </summary>
+              I have deep knowledge on Mongo, mongoose, Mysql, sequelize
+              <ul>
+                <li>Operating system Mac</li>
+                <li>Version control: Git/Github/Slack</li>
+                <li>REACT</li>
+                <li>Mongodb</li>
+                <li>Sequelize and mysql</li>
+                <li>API CALLS</li>
+                <li>Object oriented Javascript</li>
+                <li>Ajax</li>
+                <li>Jquery</li>
+                <li>Regx</li>
+                <li>Heroku</li>
+                <li>Time and space complexity issues</li>
+              </ul>
+            </details>
           </div>
         </div>
       </div>

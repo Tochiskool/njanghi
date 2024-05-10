@@ -21,6 +21,7 @@ const Contact = () => {
                         className='input'
                         type='text'
                         placeholder='Enter name...'
+                        required
                       />
                     </div>
                   </div>
@@ -31,6 +32,7 @@ const Contact = () => {
                         className='input'
                         type='email'
                         placeholder='Enter Email..'
+                        required
                       />
                     </div>
                   </div>
@@ -53,6 +55,7 @@ const Contact = () => {
                       <textarea
                         className='textarea'
                         placeholder='Textarea'
+                        required
                       ></textarea>
                     </div>
                   </div>
