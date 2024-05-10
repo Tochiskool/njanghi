@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "./App";
 import About from "./routes/About";
 import Projects from "./routes/Project/Projects";
-import Contact from "./routes/Contact";
+import Contact from "./routes/Contact/Contact";
 import GithubShow from "./GithubShow/GithubShow";
 
 export const router = createBrowserRouter([

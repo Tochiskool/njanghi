@@ -137,6 +137,10 @@ Layout Styles
 
 /* Extra small devices */
 @media only screen and (max-width: 47.9375em) {
+  .nav-primary {
+    margin: top 28px;
+    display: block;
+  }
   .remove-gutter-xs {
     padding-left: 0px;
     padding-right: 0px;
@@ -165,6 +169,16 @@ Layout Styles
   /* .wrapper .card-img{
     width: 100%;
   } */
+  .formContainer {
+    background-color: antiquewhite;
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem lightgrey;
+  }
 }
 
 /***************************

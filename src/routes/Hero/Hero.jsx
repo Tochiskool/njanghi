@@ -15,7 +15,7 @@ const careers = [
 let careerIndex = 0;
 let charIndex = 0;
 const Hero = () => {
-  const [display, setDisplay] = useState("none");
+  const [display, setDisplay] = useState("block");
   const [animateNow, setAnimateNow] = useState(
     `${careers[careerIndex].slice(0)}`
   );
@@ -75,7 +75,7 @@ const Hero = () => {
             <h4 onClick={handleAnimation} className='hero-subtitle'>
               {animateNow}
             </h4>
-            <button className='btn'>Text me</button>
+            {/* <button className='btn'>Text me</button> */}
           </div>
         </div>
       </section>

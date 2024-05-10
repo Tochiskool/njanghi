@@ -50,7 +50,9 @@ const Welcometoday = () => {
               <details>
                 <summary>
                   This is a MERN STACK WEBSITE.{" "}
-                  <em style={{ color: "grey" }}>read more....</em>{" "}
+                  <em style={{ color: "grey", cursor: "pointer" }}>
+                    read more....
+                  </em>{" "}
                 </summary>
                 I have deep knowledge on Mongo, mongoose, Mysql, sequelize
                 <ul>

@@ -1,0 +1,14 @@
+form h1 {
+  text-align: center;
+}
+
+.formContainer {
+  background-color: #d5cdc9;
+  margin-top: 2rem;
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem lightgrey;
+}
