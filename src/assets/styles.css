@@ -186,6 +186,14 @@ Layout Styles
     border-radius: 1rem;
     padding: 0.5rem;
   }
+  body {
+    overflow: hidden;
+  }
+  .centerImage {
+    display: block;
+    width: auto;
+    margin: 0 auto;
+  }
 }
 
 /***************************

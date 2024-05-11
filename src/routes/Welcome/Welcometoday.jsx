@@ -5,7 +5,7 @@ const Welcometoday = () => {
     <section style={{ marginTop: "1rem" }}>
       <div className='container'>
         <div className='row'>
-          <div className='col-1-3 pull-right-sm'>
+          <div className='col-1-3 pull-right-sm centerImage '>
             <div>
               <img
                 src={mypic}
@@ -14,6 +14,8 @@ const Welcometoday = () => {
                   height: "auto",
                   objectFit: "cover",
                   borderRadius: "60%",
+                  display: "block",
+                  margin: "0 auto",
                 }}
               />
             </div>
