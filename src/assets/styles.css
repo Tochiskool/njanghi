@@ -135,13 +135,16 @@ Layout Styles
   }
   .centerSmall {
     text-align: center;
-    /* background-color: #d5cdc9; */
+    /* background-color: */
     margin: 1rem;
     width: 25%;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1rem;
     padding: 0.5rem;
+  }
+  .formContainer {
+    width: 100%;
   }
 }
 
@@ -178,7 +181,7 @@ Layout Styles
   }
   .centerSmall {
     text-align: center;
-    /* background-color: #d5cdc9; */
+
     margin: 1rem;
     width: 20%;
     margin-left: auto;
@@ -193,6 +196,15 @@ Layout Styles
     display: block;
     width: auto;
     margin: 0 auto;
+  }
+  .formContainer {
+    margin-top: 2rem;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 1rem 1rem 2rem lightgrey;
   }
 }
 
@@ -307,7 +319,7 @@ Module Styles
 } */
 
 .styleCard {
-  /* background-color: #d5cdc9; */
+  /* background-color: */
   padding: 0.7rem;
   border-radius: 1rem;
   box-shadow: 0.5rem 0.5rem 1rem #e6c6ad;

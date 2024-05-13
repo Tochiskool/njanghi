@@ -1,6 +1,7 @@
 import ProfileCard from "./ProfileCard";
 import AfroImage from "./images/afrodelice.png";
 import Clock from "./images/clock.png";
+import Search from "./images/search.png";
 
 const ProjectCard = () => {
   return (
@@ -28,10 +29,13 @@ const ProjectCard = () => {
             </div>
             <div className='column is-4'>
               <ProfileCard
-              // title='Siri'
-              // handle='@siri56'
-              // imageUrl={SiriImage}
-              // description='Siri is created by Google'
+                title='Search engine'
+                handle='@searching images'
+                imageUrl={Search}
+                description='An application that searches images and we can upgrade'
+                githubUrl={
+                  "https://github.com/Tochiskool/search-engine/tree/main"
+                }
               />
             </div>
           </div>

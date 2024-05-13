@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <>
       <Hero />
-      <div className='container' style={{ marginTop: "2rem" }}>
-        <div className='row'>
+      <div className='container ' style={{ marginTop: "2rem" }}>
+        <div className='row remove-gutter-xs'>
           <div className='formContainer'>
             <form action=''>
               <h1>CONTACT FORM</h1>
@@ -63,11 +63,11 @@ const Contact = () => {
                 <button
                   style={{
                     display: "block",
-                    width: "20%",
+                    width: "50%",
                     margin: "0 auto",
                     marginTop: "0.5rem",
                   }}
-                  class='button is-primary is-dark'
+                  className=' button is-primary is-dark'
                 >
                   Submit
                 </button>

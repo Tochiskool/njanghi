@@ -17,9 +17,6 @@ const Navbar = ({ style }) => {
         <Link className='btn btn-nav' to='/projects'>
           Projects
         </Link>
-        <Link className='btn btn-nav' to='/githubshow'>
-          GithubShow
-        </Link>
       </ul>
     </nav>
   );
