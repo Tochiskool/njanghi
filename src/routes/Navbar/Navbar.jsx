@@ -5,7 +5,7 @@ const Navbar = ({ style }) => {
   return (
     <nav className='nav nav-primary' style={style}>
       <ul>
-        <Link className='btn btn-nav' to='/'>
+        <Link className='btn btn-nav' to='/njanghi'>
           Home
         </Link>
         <Link className='btn btn-nav' to='/about'>

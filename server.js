@@ -22,7 +22,7 @@ mongoose.connect(
   }
 );
 
-app.post("/", async (req, res) => {
+app.post("/contacts-repo", async (req, res) => {
   let user = new Users(req.body);
   let result = await user.save();
   res.send(result);

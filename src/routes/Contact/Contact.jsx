@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import API from "../../utils/API";
 import axios from "axios";
 const Contact = () => {
-  const url = "http://localhost:5173/contact/";
+  const url = "http://localhost:5173/contacts-repo";
   const [label, setLabel] = useState({
     name: "",
     email: "",
