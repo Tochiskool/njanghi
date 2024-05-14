@@ -32,7 +32,7 @@ const ProjectCard = () => {
                 title='Search engine'
                 handle='@searching images'
                 imageUrl={Search}
-                description='An application that searches images and we can upgrade'
+                description='A scalable search engine'
                 githubUrl={
                   "https://github.com/Tochiskool/search-engine/tree/main"
                 }

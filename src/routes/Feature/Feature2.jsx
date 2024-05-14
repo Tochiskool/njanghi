@@ -17,7 +17,7 @@ const Feature2 = () => {
                 State/com.microsoft.VSCode.savedState
               </li>
               <li>
-                rm -rf ~/Library/Preferences/com.microsoft.VSCode.helper.plist{" "}
+                rm -rf ~/Library/Preferences/com.microsoft.VSCode.helper.plist
               </li>
               <li>rm -rf ~/Library/Preferences/com.microsoft.VSCode.plist </li>
               <li>rm -rf ~/Library/Caches/com.microsoft.VSCode</li>

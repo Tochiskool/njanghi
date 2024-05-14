@@ -6,7 +6,7 @@ import Contact from "./routes/Contact/Contact";
 
 export const router = createBrowserRouter([
   {
-    path: "/njanghi",
+    path: "/",
     element: <App />,
   },
   {
