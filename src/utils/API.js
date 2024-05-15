@@ -2,14 +2,14 @@ import axios from "axios";
 
 export default {
   fetchContacts: function () {
-    axios.get("http://localhost:5173/").then((res) => {
+    axios.get("http://localhost:5173/api/contact-list").then((res) => {
       const contacts = res.data;
       return contacts.map((contact) => {
         return {
           name: contact.name,
           email: contact.email,
           label: contact.label,
-          text: contact.text,
+          message: contact.message,
           userCreated: contact.userCreated,
         };
       });

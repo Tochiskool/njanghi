@@ -5,7 +5,7 @@ import Footer from "../Footer";
 import API from "../../utils/API";
 import axios from "axios";
 const Contact = () => {
-  const url = "http://localhost:5173/contacts-repo";
+  const url = "http://localhost:5173/api/cont-document/";
   const [label, setLabel] = useState({
     name: "",
     email: "",
@@ -54,14 +54,14 @@ const Contact = () => {
         <div className='row remove-gutter-xs'>
           <div className='formContainer'>
             <form onSubmit={handleSubmit}>
-              <h1>
+              <hp>
                 CONTACT FORM{" "}
                 <mark>
-                  <em>work in progress</em>
+                  <em>Work in Progress</em>
                 </mark>
-              </h1>
-
-              <fieldset disabled='disabled'>
+              </hp>
+              {/* disabled='disabled' */}
+              <fieldset>
                 <legend>Send a message</legend>
                 <div>
                   <div className='field'>
