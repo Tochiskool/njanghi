@@ -33,9 +33,13 @@ const Contact = () => {
   };
 
   const updateFields = () => {
-    setResponse(
-      `Thanks for reaching out ${name}. Will get back to you asap at this email ${email}`
-    );
+    if (name === "" || email === "" || label === "" || message === " ") {
+      setResponse("Please fill the form correctly");
+    } else {
+      setResponse(
+        `Thanks for reaching out ${name}. Will get back to you asap at this email ${email}`
+      );
+    }
     setName("");
     setEmail("");
     setLabel("");
