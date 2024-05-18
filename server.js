@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 import cors from "cors";
 import logger from "morgan";
 
-import Contact from "./contactSchema.js";
+import Contact from "./src/models/contactSchema.js";
 
 const app = express();
 const PORT = process.env.PORT || 9000;
@@ -28,6 +28,7 @@ app.post("/api/contacts", async (req, res) => {
     .then((users) => res.json(users))
     .catch((err) => res.json(err));
 });
+
 //Add this to server
 app.get("/api/contacts-list", async (req, res) => {
   try {

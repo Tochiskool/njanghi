@@ -4,6 +4,7 @@ import "./style.css";
 import Footer from "../Footer";
 import API from "../../utils/API";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
   const url = "http://localhost:9000/api/contacts";
@@ -14,6 +15,8 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [background, setBackround] = useState("");
+
+  const navigate = useNavigate();
 
   //Handle Submit
   const handleSubmit = (e) => {
@@ -26,9 +29,13 @@ const Contact = () => {
         message,
       })
       .then((results) => {
-        console.log(results);
         updateFields();
+        setTimeout(() => {
+          navigate("/njanghi");
+        }, 3000);
+        console.log(results);
       })
+
       .catch((err) => console.log(err));
   };
 

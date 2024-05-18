@@ -1,0 +1,7 @@
+.parent {
+  text-align: center;
+  color: #efaf76;
+  height: 20vh;
+  width: 100vw;
+  z-index: 5;
+}
