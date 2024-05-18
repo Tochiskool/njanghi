@@ -4,38 +4,45 @@ import "./style.css";
 import Footer from "../Footer";
 import API from "../../utils/API";
 import axios from "axios";
-const Contact = () => {
-  const url = "http://localhost:5173/api/cont-document/";
-  const [label, setLabel] = useState({
-    name: "",
-    email: "",
-    label: "",
-    message: "",
-  });
-  const [contacts, setContacts] = useState([]);
 
-  //Handle change
-  const handleChange = (e) => {
-    const newLabel = { ...label };
-    newLabel[e.target.name] = e.target.value;
-    setLabel(newLabel);
-    console.log(newLabel);
-  };
+const Contact = () => {
+  const url = "http://localhost:9000/api/contacts";
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [label, setLabel] = useState("");
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("");
+  const [background, setBackround] = useState("");
+
   //Handle Submit
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
       .post(url, {
-        name: label.name,
-        email: label.email,
-        label: label.label,
-        message: label.message,
+        name,
+        email,
+        label,
+        message,
       })
-      .then((res) => {
-        console.log(res.label);
-      });
-    console.log(label);
+      .then((results) => {
+        console.log(results);
+        updateFields();
+      })
+      .catch((err) => console.log(err));
   };
+
+  const updateFields = () => {
+    setResponse(
+      `Thanks for reaching out ${name}. Will get back to you asap at this email ${email}`
+    );
+    setName("");
+    setEmail("");
+    setLabel("");
+    setMessage("");
+    setBackround("#16c48a");
+  };
+
   // useEffect(() => {
   //   loadContacts();
   // }, []);
@@ -53,13 +60,21 @@ const Contact = () => {
       <div className='container ' style={{ marginTop: "2rem" }}>
         <div className='row remove-gutter-xs'>
           <div className='formContainer'>
+            <h2
+              style={{
+                fontSize: "30px",
+                backgroundColor: background,
+                borderRadius: "10px",
+                padding: "10px",
+                textAlign: "center",
+              }}
+            >
+              <strong>
+                <em>{response}</em>
+              </strong>
+            </h2>
             <form onSubmit={handleSubmit}>
-              <hp>
-                CONTACT FORM{" "}
-                <mark>
-                  <em>Work in Progress</em>
-                </mark>
-              </hp>
+              <h2>CONTACT FORM </h2>
               {/* disabled='disabled' */}
               <fieldset>
                 <legend>Send a message</legend>
@@ -68,8 +83,8 @@ const Contact = () => {
                     <label className='label'>Name</label>
                     <div className='control'>
                       <input
-                        onChange={handleChange}
-                        value={label.name}
+                        onChange={(e) => setName(e.target.value)}
+                        value={name}
                         name='name'
                         className='input'
                         type='text'
@@ -81,8 +96,8 @@ const Contact = () => {
                     <label className='label'>Email</label>
                     <div className='control'>
                       <input
-                        onChange={handleChange}
-                        value={label.email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        value={email}
                         name='email'
                         className='input'
                         type='email'
@@ -94,8 +109,8 @@ const Contact = () => {
                     <label className='label'>Label</label>
                     <div className='control'>
                       <input
-                        onChange={handleChange}
-                        value={label.label}
+                        onChange={(e) => setLabel(e.target.value)}
+                        value={label}
                         name='label'
                         className='input'
                         type='text'
@@ -120,8 +135,8 @@ const Contact = () => {
                     <label className='label'>Message</label>
                     <div className='control'>
                       <textarea
-                        onChange={handleChange}
-                        value={label.message}
+                        onChange={(e) => setMessage(e.target.value)}
+                        value={message}
                         name='message'
                         className='textarea'
                         placeholder='Textarea'
@@ -145,20 +160,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className='container'>
-        <div className='row'>
-          <section>
-            {contacts.map((person) => (
-              <div>
-                <h2>{person.name}</h2>
-                <p>
-                  I will reach back at the email you provided {person.email}
-                </p>
-              </div>
-            ))}
-          </section>
-        </div>
-      </div>
+
       <Footer />
     </>
   );

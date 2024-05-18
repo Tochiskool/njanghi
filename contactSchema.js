@@ -13,12 +13,12 @@ const ContactSchema = new Schema({
     unique: true,
     match: [/.+@.+\..+/, "Please enter a valid e-mail address"],
   },
-  subject: {
+  label: {
     type: String,
     trim: true,
     required: "Identify yourself",
   },
-  text: {
+  message: {
     type: String,
     validate: [({ length }) => length >= 6, "Longstring should be longer."],
   },
@@ -28,4 +28,5 @@ const ContactSchema = new Schema({
   },
 });
 
-module.exports = mongoose.model("users", ContactSchema);
+const Contact = mongoose.model("contacts", ContactSchema);
+export default Contact;
