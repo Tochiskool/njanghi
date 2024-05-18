@@ -155,7 +155,9 @@ const Contact = () => {
                     </div>
                   </div>
                 </div>
-                <button
+                <input
+                  type='text'
+                  value='Submit'
                   style={{
                     display: "block",
                     width: "50%",
@@ -163,9 +165,7 @@ const Contact = () => {
                     marginTop: "0.5rem",
                   }}
                   className=' button is-primary is-dark'
-                >
-                  Submit
-                </button>
+                />
               </fieldset>
             </form>
           </div>
