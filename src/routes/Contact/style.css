@@ -27,6 +27,7 @@ h3::after {
   font-family: " impacts";
   content: "\260F";
   color: #4a413d;
+  background-color: #4a413d;
 }
 
 @media only screen and (max-width: 47.9375em) {
