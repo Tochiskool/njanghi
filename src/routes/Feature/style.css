@@ -14,3 +14,9 @@ article blockquote ul {
   text-align: center;
   list-style: none;
 }
+
+h2::after {
+  font-family: " impacts";
+  content: "\2606";
+  color: #4a413d;
+}

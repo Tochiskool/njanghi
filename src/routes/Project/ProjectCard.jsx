@@ -2,6 +2,7 @@ import ProfileCard from "./ProfileCard";
 import AfroImage from "./images/afrodelice.png";
 import Clock from "./images/clock.png";
 import Search from "./images/search.png";
+import CRUD from "./images/crud.png";
 
 const ProjectCard = () => {
   return (
@@ -36,6 +37,24 @@ const ProjectCard = () => {
                 githubUrl={
                   "https://github.com/Tochiskool/search-engine/tree/main"
                 }
+              />
+            </div>
+          </div>
+        </section>
+      </div>
+      <div className='container'>
+        <section className='section'>
+          <div className='columns'>
+            <div
+              className='column is-12
+            '
+            >
+              <ProfileCard
+                title='Mern stack app'
+                handle='@mongodb'
+                imageUrl={CRUD}
+                description='A scalable Mern stack app'
+                githubUrl={"https://github.com/Tochiskool/crud-app"}
               />
             </div>
           </div>

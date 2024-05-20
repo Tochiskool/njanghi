@@ -50,7 +50,7 @@ h3 {
 }
 
 a {
-  color: #8dc63f;
+  color: black;
   font-weight: bold;
 }
 a:hover {
@@ -150,10 +150,6 @@ Layout Styles
 
 /* Extra small devices */
 @media only screen and (max-width: 47.9375em) {
-  .nav-primary {
-    margin: top 28px;
-    display: block;
-  }
   .remove-gutter-xs {
     padding-left: 0px;
     padding-right: 0px;
@@ -163,6 +159,7 @@ Layout Styles
     height: auto;
     object-fit: cover;
   }
+
   .btn {
     display: inline-block;
   }
@@ -175,13 +172,11 @@ Layout Styles
   p {
     text-align: center;
   }
-
   .wrapper div .row .card-container div div .card-img {
     width: 100%;
   }
   .centerSmall {
     text-align: center;
-
     margin: 1rem;
     width: 20%;
     margin-left: auto;
@@ -205,6 +200,23 @@ Layout Styles
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 1rem 1rem 2rem lightgrey;
+  }
+
+  /* Slide show image */
+  .slideshow {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 1% auto;
+  }
+
+  .slide-image {
+    width: 100%;
+  }
+
+  .slide-image img {
+    border-radius: 5rem;
+    outline: none;
   }
 }
 

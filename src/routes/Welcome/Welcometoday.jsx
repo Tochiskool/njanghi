@@ -1,4 +1,5 @@
 import mypic from "./images/chris.jpeg";
+import "./welcome.css";
 
 const Welcometoday = () => {
   return (
@@ -21,58 +22,35 @@ const Welcometoday = () => {
             </div>
           </div>
           <div className='col-2-3 styleCard'>
-            <h3>Junior Frontend Developer</h3>
-            <p>
-              I am A Christian N and I feel like I lost my life to coding. But I
-              am diffused through with an overwhelming joy that comes from the
-              result am getting. This Reactjs Portfolio has a mission to
-              demonstrate my capabilities and or abilities and the prospects I
-              have in stock in the software field. I am searching for an
-              opportunity join a dynamic team where I can contribute both to the
-              front end and backend. Here you will find a few of my projects
-              uncompleted and some are just simple demonstration of my
-              understanding. I can run with you guys from Sql database to Nosql
-              databases using mysql and mongodb. Infact I can contribute in any
-              MERN stack project. No worries on version control. I have no
-              problems in handling collaborations. . Am open toa junior position
-              or{" "}
+            <h3>
+              Junior FullStack Developer{" "}
               <em>
-                <mark>Paid internship</mark>
-              </em>{" "}
-              or any proposals you offer. I have a very very extensive knowledge
-              in css using advance techniques. I also used some bootstrap but
-              prefer to actually use grids and flex box to maintain a styling
-              that is modular, scalable and reusable.
-              <em>
-                <strong>
-                  This is what I want to do in life and all I seek is a chance
-                  to join a team
-                </strong>
+                <span data-descr='Mongo Express React Node'>MERN STACK</span>
               </em>
+            </h3>
+            <p>
+              My name is A Christian N and am ready to work with your company or
+              to join your team. I am diffused through with an overwhelming joy
+              that comes from putting in the hardwork and getting results. This
+              portfolio's mission is to demonstrate how much I understand and
+              the prospects I have as a software developer. I will be more than
+              delighted to get a message from you.
             </p>
-            <details>
-              <summary>
-                This is a MERN STACK WEBSITE.{" "}
-                <em style={{ color: "grey", cursor: "pointer" }}>
-                  read more....
-                </em>{" "}
-              </summary>
-              I have deep knowledge on Mongo, mongoose, Mysql, sequelize
-              <ul>
+            <div className='resources'>
+              <h3>My stack</h3>
+              <ul className='links'>
                 <li>Operating system Mac</li>
-                <li>Version control: Git/Github/Slack</li>
+                <li>Version control / Collaboration: Git/Github/</li>
                 <li>REACT</li>
-                <li>Mongodb</li>
-                <li>Sequelize and mysql</li>
-                <li>API CALLS</li>
+                <li>Mongodb/ Mongoose</li>
+                <li>Mysql/Sequelize</li>
+                <li>Nodejs</li>
+                <li>Express</li>
                 <li>Object oriented Javascript</li>
                 <li>Ajax</li>
                 <li>Jquery</li>
-                <li>Regx</li>
-                <li>Heroku</li>
-                <li>Time and space complexity issues</li>
               </ul>
-            </details>
+            </div>
           </div>
         </div>
       </div>

@@ -5,6 +5,8 @@ import Navbar from "../Navbar/Navbar";
 import "./Css/hero.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import NavStory from "../NavStory";
+import { Link } from "react-router-dom";
 
 const careers = [
   "I am a Programmer",
@@ -53,7 +55,7 @@ const Hero = () => {
 
   return (
     <>
-      <header className='header-primary'>
+      {/* <header className='header-primary'>
         <div className='flexing'>
           <a className='logo logo-primary'>
             <img className='round' src={image} alt='Working desk' />
@@ -66,7 +68,8 @@ const Hero = () => {
           </div>
           <Navbar style={{ display: display }} />
         </div>
-      </header>
+      </header> */}
+      <NavStory />
       <section className='hero hero-primary bg-image'>
         <img src={imageHero} />
         <div className='container'>
@@ -75,7 +78,12 @@ const Hero = () => {
             <h4 onClick={handleAnimation} className='hero-subtitle'>
               {animateNow}
             </h4>
-            {/* <button className='btn'>Text me</button> */}
+            <button className='btn'>
+              <Link
+                to='https://www.linkedin.com/in/christian-n-awemu-6553491b9/'
+                target='_blank'
+              />
+            </button>
           </div>
         </div>
       </section>
