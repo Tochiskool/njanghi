@@ -71,7 +71,7 @@ const Contact = () => {
       <div className='container ' style={{ marginTop: "2rem" }}>
         <div className='row remove-gutter-xs'>
           <div className='formContainer'>
-            <h2
+            <h3
               style={{
                 fontSize: "30px",
                 backgroundColor: background,
@@ -83,7 +83,7 @@ const Contact = () => {
               <strong>
                 <em>{response}</em>
               </strong>
-            </h2>
+            </h3>
             <form onSubmit={handleSubmit}>
               <h2>CONTACT FORM </h2>
               {/* disabled='disabled' */}
