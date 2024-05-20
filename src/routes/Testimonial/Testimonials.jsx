@@ -44,10 +44,7 @@ const Testimonials = () => {
             </div>
             <div className='media-body'>
               <h4 className='media-heading'>Github</h4>
-              <p>
-                Please feel to examine my code and send comments. If you think I
-                deserve to
-              </p>
+              <p>Am working hard to getting better and better each day.</p>
               <button className='btn'>
                 <Link to='https://github.com/Tochiskool/njanghi'>Learn</Link>
               </button>

@@ -192,7 +192,7 @@ Layout Styles
     width: auto;
     margin: 0 auto;
   }
-  .formContainer {
+  /* .formContainer {
     margin-top: 2rem;
     display: block;
     width: 100%;
@@ -200,7 +200,7 @@ Layout Styles
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 1rem 1rem 2rem lightgrey;
-  }
+  } */
 
   /* Slide show image */
   .slideshow {
