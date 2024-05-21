@@ -9,10 +9,16 @@ const app = express();
 const PORT = process.env.PORT || 9000;
 
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://njanghi.vercel.app"],
+    methods: ["POST", "GET"],
+    credentials: true,
+  })
+);
 app.use(express.json());
 
-app.use(express.static("public"));
+// app.use(express.static("public"));
 
 // Connect to MongoDB
 mongoose.connect(
