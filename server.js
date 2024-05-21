@@ -9,13 +9,7 @@ const app = express();
 const PORT = process.env.PORT || 9000;
 
 app.use(express.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: ["http://deploy-mern-1whq.vercel.app"],
-    method: ["POST", "GET"],
-    credentials: true,
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 app.use(express.static("public"));
