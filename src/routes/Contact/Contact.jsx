@@ -99,6 +99,7 @@ const Contact = () => {
                         name='name'
                         className='input'
                         type='text'
+                        required
                         placeholder='Enter name...'
                       />
                     </div>
@@ -112,6 +113,7 @@ const Contact = () => {
                         name='email'
                         className='input'
                         type='email'
+                        required
                         placeholder='Enter Email..'
                       />
                     </div>
@@ -125,6 +127,7 @@ const Contact = () => {
                         name='label'
                         className='input'
                         type='text'
+                        required
                         placeholder='Intro.. please'
                       />
                     </div>
@@ -150,6 +153,7 @@ const Contact = () => {
                         value={message}
                         name='message'
                         className='textarea'
+                        required
                         placeholder='Textarea'
                       ></textarea>
                     </div>
