@@ -6,7 +6,7 @@ import logger from "morgan";
 import Contact from "./src/models/contactSchema.js";
 
 const app = express();
-const PORT = process.env.PORT || 9000;
+const PORT = process.env.PORT || 9001;
 
 app.use(express.urlencoded({ extended: true }));
 app.use(
