@@ -6,8 +6,10 @@ import API from "../../utils/API";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
+// console.log(API.fetchContacts());
+
 const Contact = () => {
-  const url = "http://localhost:9000/api/contacts";
+  const url = "http://localhost:9001/api/contacts";
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -15,6 +17,7 @@ const Contact = () => {
   const [message, setMessage] = useState("");
   const [response, setResponse] = useState("");
   const [background, setBackround] = useState("");
+  const [contacts, setContacts] = useState([]);
 
   const navigate = useNavigate();
 
@@ -56,18 +59,19 @@ const Contact = () => {
 
   // useEffect(() => {
   //   loadContacts();
+  //   console.log(contacts);
   // }, []);
 
   // function loadContacts() {
   //   API.fetchContacts()
-  //     .then((contacts) => {
-  //       return setContacts(contacts);
+  //     .then((contact) => {
+  //       return setContacts([...contacts, contact]);
   //     })
   //     .catch((err) => console.log(err));
   // }
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <div className='container ' style={{ marginTop: "2rem" }}>
         <div className='row remove-gutter-xs'>
           <div className='formContainer'>
